@@ -55,6 +55,7 @@ class _CustomListTile extends StatelessWidget {
       title: Text(menuItem.titLe),
       subtitle: Text(menuItem.subtitle),
       onTap: () {
+// propias de flutter
         // primera forma de implementar las rutas en flutter
         // Navigator.of(context).push(MaterialPageRoute(
         //   builder: (context) => const ButtonsScreen(),
