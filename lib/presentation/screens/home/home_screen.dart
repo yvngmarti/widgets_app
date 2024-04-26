@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:widgets_app/config/menu/menu_items.dart';
+import 'package:widgets_app/presentation/screens/home/buttons/buttons_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -41,11 +42,22 @@ class _CustomListTile extends StatelessWidget {
     final colors = Theme.of(context).colorScheme;
 
     return ListTile(
-      leading: Icon(menuItem.iconData, color: colors.primary,),
-      trailing: Icon(Icons.arrow_forward_ios_rounded, color: colors.primary,),
+      leading: Icon(
+        menuItem.iconData,
+        color: colors.primary,
+      ),
+      trailing: Icon(
+        Icons.arrow_forward_ios_rounded,
+        color: colors.primary,
+      ),
       title: Text(menuItem.titLe),
       subtitle: Text(menuItem.subtitle),
-      onTap: () {},
+      onTap: () {
+        // Navigator.of(context).push(MaterialPageRoute(
+        //   builder: (context) => const ButtonsScreen(),
+        // ));
+        Navigator.pushNamed(context, menuItem.link);
+      },
       // splashColor: // cambios las propiedades del splash
     );
   }
