@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:widgets_app/config/menu/menu_items.dart';
+import 'package:widgets_app/presentation/screens/home/cards/cards_screen.dart';
 
 class HomeScreen extends StatelessWidget {
+  static const String name = 'home_screen';
   const HomeScreen({super.key});
 
   @override
@@ -53,11 +55,20 @@ class _CustomListTile extends StatelessWidget {
       title: Text(menuItem.titLe),
       subtitle: Text(menuItem.subtitle),
       onTap: () {
+        // primera forma de implementar las rutas en flutter
         // Navigator.of(context).push(MaterialPageRoute(
         //   builder: (context) => const ButtonsScreen(),
         // ));
+
+        // segunda forma de implementar las rutas en flutter
         // Navigator.pushNamed(context, menuItem.link);
+
+// propias de go router
+        // tercera forma de implementar las rutas en flutter
         context.push(menuItem.link);
+
+        // cuarta forma de implementar las rutas en flutter, esta es cuando ya sabemos el nombre de la ruta el cual esta definido en la clase de la ruta
+        // context.pushNamed(CardsScreen.name);
       },
       // splashColor: // cambios las propiedades del splash
     );
