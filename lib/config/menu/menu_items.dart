@@ -27,4 +27,22 @@ const appMenuItems = <MenuItem>[
     link: '/cards',
     iconData: Icons.credit_card,
   ),
+  MenuItem(
+    titLe: 'Indicadores de progreso',
+    subtitle: 'Generales y controlados',
+    link: '/progress',
+    iconData: Icons.refresh_outlined,
+  ),
+  // MenuItem(
+  //   titLe: 'Tarjetas',
+  //   subtitle: 'Contenedor estilizado',
+  //   link: '/cards',
+  //   iconData: Icons.credit_card,
+  // ),
+  // MenuItem(
+  //   titLe: 'Tarjetas',
+  //   subtitle: 'Contenedor estilizado',
+  //   link: '/cards',
+  //   iconData: Icons.credit_card,
+  // ),
 ];
