@@ -33,12 +33,12 @@ const appMenuItems = <MenuItem>[
     link: '/progress',
     iconData: Icons.refresh_outlined,
   ),
-  // MenuItem(
-  //   titLe: 'Tarjetas',
-  //   subtitle: 'Contenedor estilizado',
-  //   link: '/cards',
-  //   iconData: Icons.credit_card,
-  // ),
+  MenuItem(
+    titLe: 'Snackbars y dialogos',
+    subtitle: 'Indicadores en pantalla',
+    link: '/snackbars',
+    iconData: Icons.info_outline,
+  ),
   // MenuItem(
   //   titLe: 'Tarjetas',
   //   subtitle: 'Contenedor estilizado',

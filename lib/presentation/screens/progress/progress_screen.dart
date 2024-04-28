@@ -1,7 +1,4 @@
-import 'dart:math';
-
 import 'package:flutter/material.dart';
-import 'package:widgets_app/config/theme/app_theme.dart';
 
 class ProgressScreen extends StatelessWidget {
   static const String name = 'progress_screen';
