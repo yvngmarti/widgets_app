@@ -59,6 +59,13 @@ class _ButtonsView extends StatelessWidget {
                 label: const Text('Filled Icon Button')),
             OutlinedButton(
                 onPressed: () {}, child: const Text('Outlined Button')),
+            OutlinedButton(
+                style: const ButtonStyle(
+                    side: MaterialStatePropertyAll(
+                  BorderSide.none,
+                )),
+                onPressed: () {},
+                child: const Text('Outlined Button NO Outline')),
             OutlinedButton.icon(
                 onPressed: () {},
                 icon: const Icon(Icons.face),
@@ -75,6 +82,7 @@ class _ButtonsView extends StatelessWidget {
             IconButton(
                 onPressed: () {},
                 icon: const Icon(Icons.app_registration_outlined)),
+            // este es el mismo que el icon button filled pero con mas lineas de codigo
             IconButton(
               onPressed: () {},
               icon: const Icon(Icons.app_registration_sharp),
@@ -82,7 +90,11 @@ class _ButtonsView extends StatelessWidget {
                 backgroundColor: MaterialStatePropertyAll(colors.primary),
                 iconColor: const MaterialStatePropertyAll(Colors.white),
               ),
-            )
+            ),
+            // mas recomendable este widget que el de arriba
+            IconButton.filled(
+                onPressed: () {},
+                icon: const Icon(Icons.app_registration_outlined))
           ],
         ),
       ),
@@ -90,6 +102,7 @@ class _ButtonsView extends StatelessWidget {
   }
 }
 
+// boton perzonalizado por si lo necesitamos
 class CustomButton extends StatelessWidget {
   const CustomButton({super.key});
 
@@ -101,10 +114,13 @@ class CustomButton extends StatelessWidget {
       child: Material(
         color: colors.primary,
         child: InkWell(
-          onTap: (){},
-          child: Padding(
+          onTap: () {},
+          child: const Padding(
             padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-            child: Text('Hola mundo',style: TextStyle(color: Colors.white),),
+            child: Text(
+              'Hola mundo',
+              style: TextStyle(color: Colors.white),
+            ),
           ),
         ),
       ),
