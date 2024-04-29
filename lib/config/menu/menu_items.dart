@@ -39,10 +39,16 @@ const appMenuItems = <MenuItem>[
     link: '/snackbars',
     iconData: Icons.info_outline,
   ),
-  // MenuItem(
-  //   titLe: 'Tarjetas',
-  //   subtitle: 'Contenedor estilizado',
-  //   link: '/cards',
-  //   iconData: Icons.credit_card,
-  // ),
+  MenuItem(
+    titLe: 'Animated container',
+    subtitle: 'Stateful widget animado',
+    link: '/animated',
+    iconData: Icons.check_box_outline_blank_rounded,
+  ),
+  MenuItem(
+    titLe: 'UI Controls + Tiles',
+    subtitle: 'Los controles del usuario en flutter',
+    link: '/ui-controls',
+    iconData: Icons.control_camera_outlined,
+  ),
 ];
