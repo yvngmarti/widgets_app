@@ -41,7 +41,7 @@ class _ProgressView extends StatelessWidget {
             height: 30,
           ),
           const Text('Circular y Linear indicator contolado'),
-          _ControlledProgressIndicator()
+          const _ControlledProgressIndicator()
         ],
       ),
     );
